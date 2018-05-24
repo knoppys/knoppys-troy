@@ -75,7 +75,7 @@ function troy_vacancies() {
 				);
 				$vacancy = get_posts($args);	
 
-				if (!$vacancy) {
+				if (empty($vacancy)) {
 					vacancies_add($vacancyXML);
 				}	
 
